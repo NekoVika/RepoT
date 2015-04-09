@@ -1,0 +1,16 @@
+[
+  {
+    "model": "contacts.Person",
+    "pk": 1,
+    "fields": {
+      "name": "Oleg",
+      "surname": "Drebot",
+      "bio": "Born in Kiev-city",
+      "dateOfBirth": "1992-08-02",
+      "jabber" : "nekovika@42cc.co",
+      "skype" : "neko_miko_vika",
+      "email" : "drobovike@gmail.com",
+      "otherContact" : "Have no other contacts information"
+    }
+  }
+]

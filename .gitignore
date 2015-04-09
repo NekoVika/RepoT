@@ -1,0 +1,11 @@
+# Compiled source #
+###################
+*.pyc
+
+#DB#
+*.db
+
+#TEMP files#
+*.txt~
+*.html~
+*.py~

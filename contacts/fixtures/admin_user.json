@@ -1,0 +1,20 @@
+[
+{
+  "fields": {
+    "username": "viktoria",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": true,
+    "is_staff": true,
+    "last_login": "2015-04-08T15:02:50.954Z",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$12000$vo6XTMCPe0lG$dyaVm1QcgDAG+p5ZsjPw/CHldHfH7T3FTF9YnFUlOGI=",
+    "email": "12123@123.com",
+    "date_joined": "2015-04-08T15:02:21.121Z"
+  },
+  "model": "auth.user",
+  "pk": 1
+}
+]

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block body_block %}
+
+{% load static from staticfiles %}
+{% if persons %}
+    {% for p in persons %}
+        <div class="row">
+            <div class="col-sm-6 fixed" style="min-width:500px;">
+                <p id="name_field">{{p.0}}</p>
+                <p id="surname_field">{{p.1}}</p>
+                <p id="date_field">{{p.2}}</p>
+                <p id="bio_field"><strong>Bio:</strong></p>
+                <p><textarea rows="7" cols="50">{{p.3}}</textarea></p>
+            </div>
+            <div class="col-sm-6 fixed">
+                <p>Contacts:</p>
+                
+                <p id="email_field"><strong>E-mail: </strong><a href="mailto:{{p.5}}">{{p.5}}</a></p>
+                <p id="jabber_field"><strong>Jabber: </strong>{{p.4}}</p>
+                <p id="skype_field"><strong>Skype: </strong>{{p.6}}</p>
+                <p id="other_field"><strong>Other contacts:</strong></p>
+                <textarea rows="7" cols="50">{{p.7}}</textarea>
+            </div>
+        </div>
+    {% endfor %}
+{%else%}
+    <p id="err_field">Error: {{error}}</p>
+{%endif%}
+{% endblock %}
